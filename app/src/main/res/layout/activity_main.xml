@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:fontFamily="monospace"
-                android:text="Travelindo"
+                android:text="Nila Transport"
                 android:textColor="@android:color/white"
                 android:textSize="24sp"
                 android:textStyle="italic" />
@@ -164,19 +164,19 @@
                 android:layout_gravity="center">
 
                 <ImageView
-                    android:id="@+id/imgKereta"
+                    android:id="@+id/imgVan"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/book_kereta" />
+                    android:src="@drawable/van_shuttle_solid" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/imgKereta"
+                    android:layout_below="@+id/imgVan"
                     android:layout_marginTop="15dp"
                     android:gravity="center"
-                    android:text="BOOKING\nKERETA"
+                    android:text="BOOKING\nTravel"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                     android:textColor="#E91E63"
                     android:textStyle="bold" />

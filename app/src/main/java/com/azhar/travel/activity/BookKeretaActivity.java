@@ -149,7 +149,7 @@ public class BookKeretaActivity extends AppCompatActivity {
                         Toast.makeText(BookKeretaActivity.this, "Asal dan Tujuan tidak boleh sama !", Toast.LENGTH_LONG).show();
                     } else {
                         AlertDialog dialog = new AlertDialog.Builder(BookKeretaActivity.this)
-                                .setTitle("Ingin booking kereta sekarang?")
+                                .setTitle("Ingin booking nila transport sekarang?")
                                 .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {

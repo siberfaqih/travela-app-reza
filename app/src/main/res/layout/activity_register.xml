@@ -7,6 +7,7 @@
     android:background="@color/gray">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -15,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="170dp"
             android:background="@drawable/header"
+            android:backgroundTint="@color/NilaPaint"
             android:elevation="5dp"
             android:fitsSystemWindows="true" />
 
@@ -101,9 +103,13 @@
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cv"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
+                    android:layout_width="395dp"
+                    android:layout_height="420dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="3dp"
                     app:strokeColor="@color/colorPrimaryDark"
@@ -120,13 +126,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:layout_marginEnd="10dp">
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="5dp"
+                            app:boxBackgroundMode="none">
 
                             <EditText
                                 android:id="@+id/reg_nama"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:background="@drawable/input_text"
                                 android:drawableStart="@drawable/ic_person"
                                 android:hint="     Masukkan Nama"
                                 android:imeOptions="actionNext"
@@ -141,13 +149,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:layout_marginEnd="10dp">
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            app:boxBackgroundMode="none">
 
                             <EditText
                                 android:id="@+id/reg_email"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:background="@drawable/input_text"
                                 android:drawableStart="@drawable/ic_email"
                                 android:hint="     Masukkan Email"
                                 android:imeOptions="actionNext"
@@ -158,56 +168,72 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtLoginHp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="10dp"
+                            app:boxBackgroundMode="none">
+
+                            <EditText
+                                android:id="@+id/reg_hp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/baseline_call_24"
+                                android:background="@drawable/input_text"
+                                android:hint="     No Handphone"
+                                android:imeOptions="actionDone"
+                                android:inputType="phone|number"
+                                android:maxLines="1"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/txtLoginPass"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
+                            android:layout_marginTop="8dp"
                             android:layout_marginEnd="10dp"
+                            app:boxBackgroundMode="none"
                             app:passwordToggleEnabled="true">
 
                             <EditText
                                 android:id="@+id/reg_password"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:backgroundTint="@color/colorPrimaryDark"
+                                android:background="@drawable/input_text"
                                 android:drawableStart="@drawable/ic_password"
                                 android:hint="     Password"
                                 android:imeOptions="actionDone"
                                 android:inputType="textPassword"
                                 android:maxLines="1"
                                 android:textSize="16sp" />
-
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/daftar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|bottom"
+                                android:layout_marginBottom="5dp"
+                                android:text="Register"
+                                android:textColor="@android:color/white"
+                                android:textSize="16sp"
+                                android:theme="@style/Theme.MaterialComponents.Light"
+                                app:backgroundTint="@color/NilaPaint"
+                                app:cornerRadius="50dp" />
                         </com.google.android.material.textfield.TextInputLayout>
 
+
+
+
+
+
                     </LinearLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="80dp"
-                        android:layout_marginEnd="30dp">
-
-                        <com.google.android.material.button.MaterialButton
-                            android:id="@+id/daftar"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="end|bottom"
-                            android:layout_margin="8dp"
-                            android:text="Register"
-                            android:textColor="@android:color/white"
-                            android:textSize="16sp"
-                            android:theme="@style/Theme.MaterialComponents.Light"
-                            app:backgroundTint="@color/colorPrimaryDark"
-                            app:cornerRadius="50dp" />
-
-                    </RelativeLayout>
-
                     <Button
                         android:id="@+id/ke_login"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="48dp"
                         android:layout_gravity="bottom|end"
                         android:layout_marginEnd="10dp"
                         android:background="@android:color/transparent"
@@ -228,7 +254,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true"
-            android:text="© Travel Apps by Azhar Rivaldi 2020"
+            android:text="@string/nila_transport_booking_app_2024"
             android:textColor="#92A7AB"
             android:textSize="12sp" />
 

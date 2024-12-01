@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.azhar.travel">
+    package="com.reza.travel">
 
     <application
         android:allowBackup="true"
@@ -12,27 +12,36 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.reza.travel.activity.AdminActivity"
+            android:exported="false"
+            android:label="@string/title_activity_admin" />
+        <activity
+            android:name="com.reza.travel.activity.KatalogActivity"
+            android:exported="false" /> <!-- SplashScreen sebagai aktivitas pertama -->
+        <activity
+            android:name="com.reza.travel.activity.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.reza.travel.activity.MainMenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main_menu" /> <!-- LoginActivity -->
+        <activity
+            android:name="com.reza.travel.activity.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" /> <!-- RegisterActivity -->
+        <activity
+            android:name="com.reza.travel.activity.RegisterActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".activity.RegisterActivity"
-            android:configChanges="keyboardHidden|orientation|screenSize"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".activity.ProfileActivity"></activity>
-        <activity
-            android:name=".activity.HistoryActivity"></activity>
-        <activity
-            android:name=".activity.BookKeretaActivity"></activity>
+        <activity android:name="com.reza.travel.activity.ProfileActivity" />
+        <activity android:name="com.reza.travel.activity.HistoryActivity" />
+        <activity android:name="com.reza.travel.activity.BookKeretaActivity" />
     </application>
 
 </manifest>

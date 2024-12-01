@@ -1,10 +1,10 @@
-package com.azhar.travel.adapter;
+package com.reza.travel.adapter;
 
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 
-import com.azhar.travel.R;
+import com.reza.travel.R;
 
 public class AlertDialogManager {
 

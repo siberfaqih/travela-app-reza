@@ -42,7 +42,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="Daftar Penyewa"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/NilaPaint"
                         android:textSize="19sp"
                         android:textStyle="bold" />
 
@@ -80,6 +80,24 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txtEmail"
                         android:text="azharrivaldi@gmail.com"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtHP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lblEmail"
+                        android:layout_marginTop="20dp"
+                        android:text="No Hp :"
+                        android:textColor="@android:color/black"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/lblNoHp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtHP"
+                        android:text="089533254554"
                         android:textSize="16sp" />
 
                 </RelativeLayout>

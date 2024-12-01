@@ -4,4 +4,17 @@
     <string name="after_register">Sudah memiliki akun? <font color='red'>Login Sekarang</font></string>
     <string name="batal">Batal</string>
     <string name="keluar">Keluar</string>
+    <string name="nila_transport">Nila Transport</string>
+    <string name="nila_transport_booking_app_2024">© Nila Transport Booking App 2024</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="about">About</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="kontak">Kontak</string>
+    <string name="nilatransport">\@nilatransport</string>
+    <string name="nila_transport_ig">\@nila.transport</string>
+    <string name="nila_transport_fb">\@nila.transport</string>
+    <string name="title_activity_admin">AdminActivity</string>
 </resources>

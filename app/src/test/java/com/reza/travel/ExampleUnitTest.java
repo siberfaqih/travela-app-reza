@@ -1,4 +1,4 @@
-package com.azhar.travel;
+package com.reza.travel;
 
 import org.junit.Test;
 

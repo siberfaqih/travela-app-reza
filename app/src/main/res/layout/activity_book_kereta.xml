@@ -41,12 +41,108 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="Katalog Kendaraan"
+                        android:textAllCaps="true"
+                        android:textColor="@color/NilaPaint"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/katalog_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Pilih Katalog"
+                        android:focusable="false"
+                        android:drawableEnd="@drawable/baseline_arrow_drop_down_24"
+                        android:drawablePadding="10dp"
+                        android:backgroundTint="@color/NilaPaint"
+                        android:clickable="true"
+                        android:inputType="none"
+                        android:textColor="@color/black"
+                        android:textColorHint="#BACBCF" />
+
+                    <EditText
+                        android:id="@+id/edtKatalogTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Mobil"
+                        android:textColor="@color/black"
+                        android:enabled="false" />
+
+                    <EditText
+                        android:id="@+id/edtKatalogPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Rp 0"
+                        android:textColor="@color/black"
+                        android:enabled="false" />
+
+                    <EditText
+                        android:id="@+id/edtKatalogDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:enabled="false" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="end|bottom"
+                        android:padding="10dp">
+
+                        <Button
+                            android:id="@+id/button_decrease"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/text_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="0"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/button_increase"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                app:strokeColor="@color/colorPrimary"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
                         android:gravity="center"
                         android:text="Tujuan Perjalanan"
                         android:textAllCaps="true"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/NilaPaint"
                         android:textSize="19sp"
                         android:textStyle="bold" />
 
@@ -104,7 +200,7 @@
                         android:gravity="center"
                         android:text="Rundown Acara"
                         android:textAllCaps="true"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/NilaPaint"
                         android:textSize="19sp"
                         android:textStyle="bold" />
 
@@ -112,9 +208,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:drawablePadding="20dp"
+                        android:minHeight="48dp"
                         android:hint="Masukkan Rundown"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/black"
                         android:textColorHint="#BACBCF" />
 
                 </LinearLayout>
@@ -127,7 +224,7 @@
                 android:layout_margin="5dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="3dp"
-                app:strokeColor="@color/colorPrimary"
+                app:strokeColor="@color/NilaPaint"
                 app:strokeWidth="2dp">
 
                 <LinearLayout
@@ -143,7 +240,7 @@
                         android:gravity="center"
                         android:text="Waktu Perjalanan"
                         android:textAllCaps="true"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/NilaPaint"
                         android:textSize="19sp"
                         android:textStyle="bold" />
 
@@ -151,69 +248,13 @@
                         android:id="@+id/tanggal_berangkat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:minHeight="48dp"
                         android:drawableStart="@drawable/ic_date"
                         android:drawablePadding="20dp"
                         android:hint="Tanggal Berangkat"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/black"
                         android:textColorHint="#BACBCF" />
-
-                </LinearLayout>
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="3dp"
-                app:strokeColor="@color/colorPrimary"
-                app:strokeWidth="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-
-                    <TextView
-                        android:id="@+id/coba"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:gravity="center"
-                        android:text="JUMLAH"
-                        android:textAllCaps="true"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="19sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Dewasa"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="@color/black" />
-
-                    <Spinner
-                        android:id="@+id/dewasa"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Anak-anak"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                        android:textColor="@color/black" />
-
-                    <Spinner
-                        android:id="@+id/anak"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginBottom="8dp" />
 
                 </LinearLayout>
 
@@ -230,7 +271,7 @@
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:theme="@style/Theme.MaterialComponents.Light"
-                app:backgroundTint="@color/colorPrimaryDark"
+                app:backgroundTint="@color/NilaPaint"
                 app:cornerRadius="50dp" />
 
         </LinearLayout>

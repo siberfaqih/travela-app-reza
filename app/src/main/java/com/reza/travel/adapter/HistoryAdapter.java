@@ -1,4 +1,4 @@
-package com.azhar.travel.adapter;
+package com.reza.travel.adapter;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -9,8 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.azhar.travel.R;
-import com.azhar.travel.model.HistoryModel;
+import com.reza.travel.R;
+import com.reza.travel.model.HistoryModel;
 
 import java.util.ArrayList;
 
@@ -44,7 +44,7 @@ public class HistoryAdapter extends ArrayAdapter<HistoryModel> {
         tvTotal.setText("Total :");
 
         TextView total = listItemView.findViewById(R.id.total);
-        total.setText("Rp. " + current.getTotal());
+        total.setText(current.getTotal());
 
         ImageView imageIcon = listItemView.findViewById(R.id.image);
 

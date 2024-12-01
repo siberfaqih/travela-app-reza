@@ -1,4 +1,4 @@
-package com.azhar.travel.model;
+package com.reza.travel.model;
 
 public class HistoryModel {
 
